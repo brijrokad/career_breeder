@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABC Schools</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width, inital-scale = 1.0">
+	<link rel="shortcut icon" href="img\layer.ico">
+	<link rel="stylesheet" type="text/css" href="abc.css">
+</head>
+<body>
+<section>
+	<div class="start">Basic Details</div>
+	<div class="start_content">
+			<img src="img\1.png">
+			<img src="img\2.png">
+			<img src="img\3.png">
+			<img src="img\4.png">
+			<img src="img\5.png">
+			<img src="img\6.png">
+			<img src="img\7.png">
+			<img src="img\8.png">
+			<img src="img\9.png">
+			<img src="img\10.png">
+			<img src="img\11.png">
+			<img src="img\12.png">
+		</div>
+	</div>
+	<div class="start">About The School</div>
+	<div>
+		<button onclick="document.getElementById('bt1').style.display='block'" class="bt">Basic Facilities</button>
+		<button class="bt" onclick="document.getElementById('bt2').style.display='block'">Infrastructure</button>
+		<button class="bt" onclick="document.getElementById('bt3').style.display='block'">Curriculum</button>
+		<div class="info" id="bt1">
+			<div class="info_ls">
+				<ol>
+					<li>Source of drinking water:</li>
+					<li>Electricity Available:</li>
+					<li>Medical checkup:</li>
+					<li>Midday meal Available:</li>
+				</ol>
+				<div class="info_rs">
+					<b>Handpump<br>Yes<br>Yes<br>Yes</b>
+				</div>
+			</div>
+		</div>
+		<div class="info"  id="bt2">
+			<div class="info_ls">
+				<ol>
+					<li>Status of Bulding:</li>
+					<li>No. of Classrooms:</li>
+					<li>Total Toilets:</li>
+					<li>Boundary Wall:</li>
+				</ol>
+				<div class="info_rs">
+					<b>Private<br>20<br>27<br>Under Construction</b>
+				</div>
+			</div>
+		</div>
+		<div class="info"  id="bt3">
+			<div class="info_ls">
+				<ol>
+					<li>CCE System Implemented:</li>
+					<li>Student Records Maintained:</li>
+					<li>Libarary Available:</li>
+					<li>Computer Lab Available:</li>
+				</ol>
+				<div class="info_rs">
+					<b>Yes<br>No<br>Yes<br>Yes</b>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var bt1 = document.getElementById('bt1');
+			var bt2 = document.getElementById('bt2');
+			var bt3 = document.getElementById('bt3');
+			window.onclick = function(event) {
+				if (event.target == bt2) {
+					bt2.style.display = "none";
+				}
+				else if (event.target == bt3){
+					bt3.style.display = "none";
+				}
+				else{
+					bt1.style.displlay = "none";
+				}
+			}
+		</script>
+	</div>
+	<div class="start">Other Features</div>
+	<div class="feature">
+		<div class="feat1">
+			<div class="flip_container">
+				<div class="flipper">
+					<div class="front">
+						Fundings And Grants
+					</div>
+					<div class="back">
+						Funds & Grants<br><br>
+						Total Grant Receipt: 7,00,000<br><br>
+						Total Grant Expenditure: 4,28,000
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feat2">
+			<div class="flip_container">
+				<div class="flipper">
+					<div class="front">
+						Inspection In The School
+					</div>
+					<div class="back">
+						Inspection<br><br>
+						Inspection by Officers: 8<br><br>
+						Inspection by Others: 4
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="abc">&copy ABC Schools</div>
+</footer>
+</body>
+</html>
